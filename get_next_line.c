@@ -67,13 +67,7 @@ char	*get_next_line(int fd)
         bytes_read = read(fd, temp, BUFFER_SIZE);
     }
     free(temp);
-    if (bytes_read < 0)
-    {
-        free(buffer);
-        buffer = NULL;
-        return (NULL);
-    }
-    if (bytes_read == 0 && (!buffer || *buffer == '\0'))
+    if (bytes_read < 0 ||  (!buffer || *buffer == '\0'))
     {
         free(buffer);
         buffer = NULL;
