@@ -10,11 +10,7 @@ A C function that reads a line from a file descriptor, handling buffering and st
 *   Dynamic memory allocation (`malloc`, `free`).
 *   Handling different `BUFFER_SIZE` values during compilation.
 *   Reading line by line without reading the entire file at once.
-
-**Bonus Features Implemented:**
-*   [ ] Implemented using only one static variable.
-*   [ ] Handles multiple file descriptors simultaneously without losing the read state for each. *(Mark [x] if implemented)*
-
+  
 **Tech:** C, Static Variables, File Descriptors, `read()`, `malloc()`, `free`, Make
 
 ---
